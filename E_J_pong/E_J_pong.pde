@@ -28,21 +28,22 @@ void draw() {
   if(by<0){ 
      yspeed=-yspeed;
   }
-  
-}
+  if(intersects(bx,by,mousex,400,200)
 
 boolean kick(int ballx,int bally,int ballw,int ballh,int paddlex,int paddley,int paddlew,int paddlelentgh){
 
-  if(bally > paddley && ballx <
+  if(bally > paddley && ballx > paddlex && ballx <paddlex + paddlelentgh){
+  
+   return true;
+}
+   return false;
+   
   
   
   
+}
   
-  
-  
-  
-  
- return false;
+
  
   
   
@@ -58,4 +59,3 @@ boolean kick(int ballx,int bally,int ballw,int ballh,int paddlex,int paddley,int
   
   
   
-}
